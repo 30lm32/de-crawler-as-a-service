@@ -130,4 +130,5 @@ size is referring how many times that URL and link occur during the crawling.
 You can see graph of crawled data over the target URL, below.
 
 ![Screenshot of Graph-1, http://tomblomfield.com](img/screenshot_neo4j%231.png)
+
 ![Screenshot of Graph-2, http://tomblomfield.com/rss](img/screenshot_neo4j%232.png)
