@@ -128,7 +128,7 @@ func test(configFile string, t *testing.T) {
 		t.Fatalf("Expected %d but got %d %s", ev, av, configFile)
 	}
 
-	//crawler.Reset()
+	crawler.Reset()
 	crawler.Close()
 }
 
