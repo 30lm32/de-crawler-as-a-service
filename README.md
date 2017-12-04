@@ -128,13 +128,9 @@ size is referring how many times that URL and link occur during the crawling.
         RETURN p
 
 
-![alt text](img/screenshot_neo4j#1.png?raw=true "Logo Title Text 1")
+![alt text](img/screenshot_neo4j%232.png "Logo Title Text 1")
 ![alt text](img/screenshot_neo4j#2.png?raw=true "Logo Title Text 1")
 
-![adad](./img/screenshot_neo4j#1.png)
+![adad]()
 
-![adad](./img/screenshot_neo4j#1.png)
-
-<p align="center">
-  <img src="./img/screenshot_neo4j#1.png" width="350"/>
-</p>
+![adad](img/screenshot_neo4j%231.png)
