@@ -6,7 +6,7 @@ Introduction
 In this project, a simple crawler that is providing two searching strategies `(eg. BFS, DFS)` boosting `go routines` was implemented from scratch,
 and integrated into `Redis` and `Neo4j`. It is starting fetching from the first target URL and visit the rest of URL either `BFS` or `DFS`.
 It is saving and keep track the visited URLs on `Redis` to provide consistency of data amongst a bunch of go routines.
-It is either creating a new node and new link for each URL pair, or updating existing nodes and links  on `Neo4j` by using [`Cypher`](https://www.google.com) query, as well.
+It is either creating a new node and new link for each URL pair, or updating existing nodes and links  on `Neo4j` by using [`Cypher`](https://neo4j.com/developer/cypher-query-language/) query, as well.
 
 Configuration
 -------------
@@ -109,7 +109,7 @@ After run the services using the make command above, you could type the followin
 
     http://localhost:7474/browser/
 
-On Neo4j UI, you could write some specific [`Cypher`](https://www.google.com) query to visualize and analysis the graph corresponding to our data that the crawler service collected over the target URL.
+On Neo4j UI, you could write some specific [`Cypher`](https://neo4j.com/developer/cypher-query-language/) query to visualize and analysis the graph corresponding to our data that the crawler service collected over the target URL.
 
 When you type query Q1 below, it would return the all patterns related to our data collections.
     URL is class of an instance of URL visited by our crawler.
@@ -127,10 +127,7 @@ size is referring how many times that URL and link occur during the crawling.
         WHERE url0.size > 5 and url1.size > 4 and r.size > 0
         RETURN p
 
+You can see graph of crawled data over the target URL, below.
 
-![alt text](img/screenshot_neo4j%232.png "Logo Title Text 1")
-![alt text](img/screenshot_neo4j#2.png?raw=true "Logo Title Text 1")
-
-![adad]()
-
-![adad](img/screenshot_neo4j%231.png)
+![Screenshot of Graph-1, http://tomblomfield.com](img/screenshot_neo4j%231.png)
+![Screenshot of Graph-2, http://tomblomfield.com/rss](img/screenshot_neo4j%232.png)
