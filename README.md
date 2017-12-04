@@ -115,14 +115,16 @@ When you type query Q1 below, it would return the all patterns related to our da
     URL is class of an instance of URL visited by our crawler.
     link is corresponding to the relationship between two instances of URL.
 
-    Q1:
+Q1:
+
         MATCH p=(url0:URL)-[r:link]->(url1:URL)
         RETURN p
 
 When you type query Q2 below, you would see filtered result according to size of URL and link.
 size is referring how many times that URL and link occur during the crawling.
 
-    Q2:
+Q2:
+
         MATCH p=(url0:URL)-[r:link]->(url1:URL)
         WHERE url0.size > 5 and url1.size > 4 and r.size > 0
         RETURN p
