@@ -1,0 +1,48 @@
+{
+	"ImportPath": "crawler",
+	"GoVersion": "go1.9",
+	"GodepVersion": "v79",
+	"Packages": [
+		"./..."
+	],
+	"Deps": [
+		{
+			"ImportPath": "github.com/go-redis/redis",
+			"Comment": "v6.7.4",
+			"Rev": "e5e021257bfc6d5fbf0beac33e30194311fb189f"
+		},
+		{
+			"ImportPath": "github.com/go-redis/redis/internal",
+			"Comment": "v6.7.4",
+			"Rev": "e5e021257bfc6d5fbf0beac33e30194311fb189f"
+		},
+		{
+			"ImportPath": "github.com/go-redis/redis/internal/consistenthash",
+			"Comment": "v6.7.4",
+			"Rev": "e5e021257bfc6d5fbf0beac33e30194311fb189f"
+		},
+		{
+			"ImportPath": "github.com/go-redis/redis/internal/hashtag",
+			"Comment": "v6.7.4",
+			"Rev": "e5e021257bfc6d5fbf0beac33e30194311fb189f"
+		},
+		{
+			"ImportPath": "github.com/go-redis/redis/internal/pool",
+			"Comment": "v6.7.4",
+			"Rev": "e5e021257bfc6d5fbf0beac33e30194311fb189f"
+		},
+		{
+			"ImportPath": "github.com/go-redis/redis/internal/proto",
+			"Comment": "v6.7.4",
+			"Rev": "e5e021257bfc6d5fbf0beac33e30194311fb189f"
+		},
+		{
+			"ImportPath": "golang.org/x/net/html",
+			"Rev": "9dfe39835686865bff950a07b394c12a98ddc811"
+		},
+		{
+			"ImportPath": "golang.org/x/net/html/atom",
+			"Rev": "9dfe39835686865bff950a07b394c12a98ddc811"
+		}
+	]
+}

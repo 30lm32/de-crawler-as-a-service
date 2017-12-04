@@ -1,0 +1,45 @@
+version: "3"
+services:
+  crawler-test:
+    build:
+      context: ./crawler-go
+      dockerfile: Dockerfile.test
+    container_name: "crawler-go-test"
+    depends_on:
+      - redis
+      - neo4j
+      - sut
+    links:
+      - redis
+      - neo4j
+      - sut
+    volumes:
+      - ./crawler-go/src/data:/crawler/data
+
+  sut:
+    build:
+      context: ./crawler-go/
+      dockerfile: Dockerfile.http-server
+    container_name: "crawler-http-server"
+    depends_on:
+      - redis
+      - neo4j
+    ports:
+      - 8080:8080
+    volumes:
+      - ./crawler-go/src/test/html/:/public
+
+  redis:
+    image: "redis:alpine"
+    ports:
+      - "6379:6379"
+    container_name: "crawler-redis"
+
+  neo4j:
+    image: neo4j:latest
+    container_name: "crawler-neo4j"
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    environment:
+      NEO4J_AUTH: "none"

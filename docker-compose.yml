@@ -1,0 +1,28 @@
+version: "3"
+services:
+  redis:
+    image: "redis:alpine"
+    ports:
+      - "6379:6379"
+    container_name: "crawler-redis"
+  neo4j:
+    image: neo4j:latest
+    container_name: "crawler-neo4j"
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    environment:
+      NEO4J_AUTH: "none"
+  crawler:
+    build:
+      context: ./crawler-go
+      dockerfile: Dockerfile
+    container_name: "crawler-go"
+    depends_on:
+      - redis
+      - neo4j
+    links:
+      - redis
+      - neo4j
+    volumes:
+      - ./crawler-go/src/data:/crawler/data

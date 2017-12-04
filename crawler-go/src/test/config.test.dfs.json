@@ -1,0 +1,13 @@
+{
+  "app_name" : "crawler",
+  "redis_address":  "redis:6379",
+  "neo4j_bolt_address": "bolt://neo4j:7687",
+  "target_url": "http://sut:8080/index.html",
+  "filter_url": "http://sut:8080/index.html",
+  "reset_redis" : true,
+  "reset_neo4j" : true,
+  "redis_connection_attempts": 15,
+  "neo4j_connection_attempts" : 15,
+  "attempts_time_interval": "1000ms",
+  "crawler_method" : "dfs"
+}

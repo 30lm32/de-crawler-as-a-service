@@ -1,0 +1,14 @@
+#FROM httpd:2.4
+#COPY src/test-html/ /usr/local/apache2/htdocs/
+#EXPOSE 80
+
+
+FROM node:argon
+
+WORKDIR /
+
+RUN npm install -g http-server
+
+EXPOSE 8080
+
+CMD ["http-server"]
