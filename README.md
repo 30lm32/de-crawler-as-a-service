@@ -7,9 +7,10 @@ A simple crawler service was implemented from scratch, and integrated into `Redi
 The crawler service is crawling the first target URL, and then, visiting the rest of URLs in the fetched HTML documents, respectively and recursively.
 While crawling a HTML documents corresponding to URLs, it could refer to 1 out of 2 different searching algorithms (`BFS, DFS`).
 Those searching algorithms were boosted by `go routines` in `GO` in order to speed up crawling service.
+
 During crawling, there is a possibility that a bunch of go routines that would be created may fetch and process the same HTML documents at the same time.
-In this case, the crawler may create inconsistent data.
-Thus, `Redis` Key-Value NoSQL system was preferred using in this project to solve that problem and build a robust and consistent system.
+In this case, the crawler may create inconsistent data. Thus, `Redis` Key-Value NoSQL system was preferred using in this project to solve that problem and build a robust and consistent system.
+
 Each URL may referring to either the other different URL or itself in a HTML document. That relationship between two URLs can call as a Link.
 There is a simple easy way to represent those crawled Links and URLs by using a specific data structure, which is graph.
 Thus, `Neo4j` Graph NoSQL were used to represent and visualize the graph which consists of URLs and Links.
