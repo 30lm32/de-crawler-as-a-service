@@ -48,7 +48,6 @@ All services we are using in this project are working as a docker container.
 We wrote different dockerfile and *.yml files in order to manage, test and deploy these containers systematically.
 Although we are using 3 different containers in building phase, we are using one more additional container corresponding to `http-server` in testing phase to run test cases locally on this http-server.
 
-
     To test the services, we are using
         docker-compose.test.yml,
         src/Dockerfile.http-server
