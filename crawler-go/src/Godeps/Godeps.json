@@ -1,10 +1,7 @@
 {
-	"ImportPath": "crawler",
+	"ImportPath": "docker-crawler-service/crawler-go/src",
 	"GoVersion": "go1.9",
-	"GodepVersion": "v79",
-	"Packages": [
-		"./..."
-	],
+	"GodepVersion": "v80",
 	"Deps": [
 		{
 			"ImportPath": "github.com/go-redis/redis",
@@ -35,6 +32,41 @@
 			"ImportPath": "github.com/go-redis/redis/internal/proto",
 			"Comment": "v6.7.4",
 			"Rev": "e5e021257bfc6d5fbf0beac33e30194311fb189f"
+		},
+		{
+			"ImportPath": "github.com/johnnadratowski/golang-neo4j-bolt-driver",
+			"Comment": "v0.1-12-g1108d6e",
+			"Rev": "1108d6e66ccf2c8e68ab26b5f64e6c0a2ad00899"
+		},
+		{
+			"ImportPath": "github.com/johnnadratowski/golang-neo4j-bolt-driver/encoding",
+			"Comment": "v0.1-12-g1108d6e",
+			"Rev": "1108d6e66ccf2c8e68ab26b5f64e6c0a2ad00899"
+		},
+		{
+			"ImportPath": "github.com/johnnadratowski/golang-neo4j-bolt-driver/errors",
+			"Comment": "v0.1-12-g1108d6e",
+			"Rev": "1108d6e66ccf2c8e68ab26b5f64e6c0a2ad00899"
+		},
+		{
+			"ImportPath": "github.com/johnnadratowski/golang-neo4j-bolt-driver/log",
+			"Comment": "v0.1-12-g1108d6e",
+			"Rev": "1108d6e66ccf2c8e68ab26b5f64e6c0a2ad00899"
+		},
+		{
+			"ImportPath": "github.com/johnnadratowski/golang-neo4j-bolt-driver/structures",
+			"Comment": "v0.1-12-g1108d6e",
+			"Rev": "1108d6e66ccf2c8e68ab26b5f64e6c0a2ad00899"
+		},
+		{
+			"ImportPath": "github.com/johnnadratowski/golang-neo4j-bolt-driver/structures/graph",
+			"Comment": "v0.1-12-g1108d6e",
+			"Rev": "1108d6e66ccf2c8e68ab26b5f64e6c0a2ad00899"
+		},
+		{
+			"ImportPath": "github.com/johnnadratowski/golang-neo4j-bolt-driver/structures/messages",
+			"Comment": "v0.1-12-g1108d6e",
+			"Rev": "1108d6e66ccf2c8e68ab26b5f64e6c0a2ad00899"
 		},
 		{
 			"ImportPath": "golang.org/x/net/html",
