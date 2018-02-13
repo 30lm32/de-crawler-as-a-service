@@ -2,6 +2,9 @@
 	"ImportPath": "docker-crawler-service/crawler-go/src",
 	"GoVersion": "go1.9",
 	"GodepVersion": "v80",
+	"Packages": [
+		"./..."
+	],
 	"Deps": [
 		{
 			"ImportPath": "github.com/go-redis/redis",
