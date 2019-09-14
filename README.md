@@ -1,4 +1,4 @@
-Dockerized-Crawler-Service
+Crawler as a Service
 ==========================
 
 Introduction
