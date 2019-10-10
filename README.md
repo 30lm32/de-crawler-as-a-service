@@ -29,8 +29,8 @@ You could define different parameters related to the service, in this configurat
   "app_name" : "crawler",
   "redis_address":  "redis:6379",
   "neo4j_bolt_address": "bolt://neo4j:7687",
-  "target_url": "http://tomblomfield.com",
-  "filter_url": "http://tomblomfield.com",
+  "target_url": "https://www.amazon.com",
+  "filter_url": "https://www.amazon.com",
   "reset_redis" : true,
   "reset_neo4j" : true,
   "redis_connection_attempts": 15,
@@ -137,6 +137,6 @@ Q2:
 
 You can see graph of crawled data over the target URL, below.
 
-![Screenshot of Graph-1, http://tomblomfield.com](img/screenshot_neo4j%231.png)
+![Screenshot of Graph-1, https://www.amazon.com](img/screenshot_neo4j%231.png)
 
-![Screenshot of Graph-2, http://tomblomfield.com/rss](img/screenshot_neo4j%232.png)
+![Screenshot of Graph-2, https://www.amazon.com/rss](img/screenshot_neo4j%232.png)
